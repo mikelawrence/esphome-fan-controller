@@ -35,7 +35,7 @@ jobs:
 
   buildFirmware:
     name: Build Firmware
-    uses: ./.github/workflows/build.yml
+    uses: esphome/build.yml@v7
     needs:
       - getReleaseInfo
     with:
