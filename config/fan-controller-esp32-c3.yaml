@@ -6,13 +6,8 @@ esphome:
   name: ${name}
   friendly_name: ${friendly_name}
   min_version: 2025.12.0
-  project:
-    name: Mike Lawrence.${friendly_name}
-    # keep "version: dev" so that it can be replaced by Github workflows with the `release` version
-    version: dev
-  name_add_mac_suffix: true
+  name_add_mac_suffix: false
 
-# ESP32-C3-MINI-1-N4X
 esp32:
   variant: ESP32C3
   flash_size: 4MB
