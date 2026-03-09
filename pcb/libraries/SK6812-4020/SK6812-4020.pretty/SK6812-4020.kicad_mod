@@ -1,0 +1,155 @@
+(footprint "SK6812-4020"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -3.5 -5.7 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "eecd7c4b-d34c-4b8a-a0a2-64ee5e3e3620")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(property "Value" "SK6812-4020"
+		(at -3 -4.3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b1a02da4-7119-4029-8d15-04d608ca8fc7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c457a71c-0988-44da-a801-5e97d336b78a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "40f7f342-8c34-4d4f-bbf8-e02b37f53a78")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -5.5 -8.6)
+		(end -5.5 -6.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e2b49650-eed4-46cd-a630-89b0b3b831dd")
+	)
+	(fp_line
+		(start -5.5 -8.6)
+		(end -1.5 -8.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "72ba7bab-13d4-4b48-8f06-80a7f09916c3")
+	)
+	(fp_line
+		(start -5.5 -6.6)
+		(end -2.2 -6.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "406c1300-2140-4019-84fa-45dc275502ad")
+	)
+	(fp_line
+		(start -1.5 -7.3)
+		(end -2.2 -6.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "943f2687-cec7-4d51-b710-46343e28db1a")
+	)
+	(fp_line
+		(start -1.5 -7.3)
+		(end -1.5 -8.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "eb938a42-46b9-4b75-9daa-f58c54e7936f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -3.5 -3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "efc46336-bad4-41d8-8740-a2c5d2c86391")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -5 -8 180)
+		(size 0.75 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1b84acc2-f081-47e2-a87b-52ba0100ea7e")
+	)
+	(pad "2" smd rect
+		(at -3.875 -8 180)
+		(size 0.6 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "92ef4591-60fd-4457-9822-55417dffe5fa")
+	)
+	(pad "3" smd rect
+		(at -2.995 -8 180)
+		(size 0.4 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "a18939a3-e041-4c23-b675-6286ee74978e")
+	)
+	(pad "4" smd rect
+		(at -2.015 -8 180)
+		(size 0.8 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7f05a102-c161-4ece-b895-da9c926ee0bf")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/libraries/SK6812-4020/SK6812 Side 4020 LED--3DModel-STEP-56544.STEP"
+		(offset
+			(xyz -3.5 7.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

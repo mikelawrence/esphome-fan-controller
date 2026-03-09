@@ -1,0 +1,46 @@
+substitutions:
+  name: "fan-controller"
+  friendly_name: "Fan Controller"
+
+esphome:
+  name: ${name}
+  friendly_name: ${friendly_name}
+  min_version: 2025.12.0
+  project:
+    name: Mike Lawrence.${friendly_name}
+    # keep "version: dev" so that it can be replaced by Github workflows with the `release` version
+    version: dev
+  name_add_mac_suffix: true
+
+# ESP32-C3-MINI-1-N4X
+esp32:
+  variant: ESP32C3
+  flash_size: 4MB
+  cpu_frequency: 160MHz
+  framework:
+    type: esp-idf
+
+# API is a requirement of the dashboard import
+# Grab a key from https://esphome.io/components/api.html
+api:
+#   encryption:
+#     key:
+
+# OTA is required for Over-the-Air updating
+ota:
+  - platform: esphome
+    id: ota_esphome
+    # password: !secret ota_password
+
+# WiFi is required
+wifi:
+#   ssid: !secret wifi_ssid
+#   password: !secret wifi_password
+#   use_address: xxx.xxx.xxx.xxx
+
+# Allows user to provision WiFi credentials with Bluetooth using Improv standard
+esp32_improv:
+  authorizer: none
+
+# Allow user to provision WiFi credentials with USB port using Improv standard
+improv_serial:

@@ -1,0 +1,8 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "TYPE-C-31-M-12")(type "KiCad")(uri "${KIPRJMOD}/libraries/TYPE-C-31-M-12")(options "")(descr ""))
+  (lib (name "KiKit")(type "KiCad")(uri "${KIPRJMOD}/libraries/KiKit")(options "")(descr ""))
+  (lib (name "ESP32-C3-MINI")(type "KiCad")(uri "${KIPRJMOD}/libraries/ESP32-C3-MINI")(options "")(descr ""))
+  (lib (name "SK6812-4020")(type "KiCad")(uri "${KIPRJMOD}/libraries/SK6812-4020/SK6812-4020.pretty")(options "")(descr ""))
+  (lib (name "MPM3506A")(type "KiCad")(uri "${KIPRJMOD}/libraries/MPM3506A")(options "")(descr ""))
+)

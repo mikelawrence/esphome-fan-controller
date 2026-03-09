@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  push:
+    paths:
+      - "**.yaml"
+      - ".github/workflows/ci.yml"
+  # pull_request:
+  #   paths:
+  #     - "**.yaml"
+  #     - ".github/workflows/ci.yml"
+  schedule:
+    # Weekly on Sunday at midnight
+    - cron: "0 0 * * 0"
+
+concurrency:
+  group: "Only one at a time"
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    name: Building ${{ matrix.file }} / ${{ matrix.esphome-version }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        #### Modify below here to match your project ####
+        file:
+          - fan-controller-esp32-c3
+        #### Modify above here to match your project ####
+        esphome-version:
+          - stable
+          - dev
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v5
+
+      - name: Update reference
+        run: |
+          echo "Update ref: ${{ github.head_ref || github.ref_name }}"
+          YAML_FILES=$(find . -type f -name '*.yaml')
+          find . -type f -name '*.yaml' | while read file; do
+            CHANGED=""
+            CHANGED+=$(sed -i.bak 's|ref:.*$|ref: ${{ github.head_ref || github.ref_name }}|g; s|@main$|@${{ github.head_ref || github.ref_name }}|g w /dev/stdout' "$file");
+            if [ "$CHANGED" != "" ]; then
+              echo "Changed file: $file"
+              diff "$file.bak" "$file" || true | sed 's/^/    /'
+            fi
+            rm "$file.bak"
+          done
+
+      - name: ESPHome ${{ matrix.esphome-version }}
+        uses: esphome/build-action@v7
+        with:
+          yaml-file: ${{ matrix.file }}.yaml
+          version: ${{ matrix.esphome-version }}
