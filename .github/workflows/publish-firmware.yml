@@ -40,7 +40,7 @@ jobs:
       - getReleaseInfo
     with:
       files: |
-        fan-controller-esp32-c3.factory.yaml
+        config/fan-controller-esp32-c3.factory.yaml
       esphome-version: latest
       # combined-name: project-template
       release-summary: ${{ needs.getReleaseInfo.outputs.summary }}
