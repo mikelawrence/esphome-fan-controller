@@ -20,6 +20,9 @@ esp32:
   framework:
     type: esp-idf
 
+logger:
+  level: DEBUG
+
 # API is a requirement of the dashboard import
 # Grab a key from https://esphome.io/components/api.html
 api:
