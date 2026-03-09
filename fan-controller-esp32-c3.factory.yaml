@@ -4,30 +4,26 @@ substitutions:
 
 packages:
   # Include all of the core configuration
-  core: !include fan-controller-esp32-c3.yaml
+  core: !include ${name}-esp32-c3.yaml
 
 esphome:
   project:
     name: Mike Lawrence.${friendly_name}
     version: dev # This will be replaced by the github workflows with the `release` version
-  name_add_mac_suffix: true
 
 ota:
   - platform: http_request
-    id: ota_http_request
 
 update:
   - platform: http_request
-    id: update_http_request
-    name: ${friendly_name} Firmware
+    name: Firmware
     source: https://mikelawrence.github.io/esphome-fan-controller/firmware/${name}.manifest.json
 
-http_request: null
+http_request:
 
 dashboard_import:
   # keep "@main" so that it can be replaced as necessary for Github workflows
-  package_import_url: github://mikelawrence/esphome-fan-controller/config/${name}-esp32-c3.yaml@main
-  import_full_config: false
+  package_import_url: github://mikelawrence/esphome-fan-controller/${name}-esp32-c3.yaml@main
 
 wifi:
 
