@@ -6130,7 +6130,7 @@
 		)
 		(uuid "1ab6bcbb-c0c3-4861-8ece-d17a09187113")
 	)
-	(text "Notes\n1. Input voltage range 5 to 24V. Operating current 2A.\n2. 3-Pin Fan speed support add jumper, TP1 to U6-7 (~{SHDN} Pin).\n"
+	(text "Notes\n1. Input voltage range 5 to 24V. Operating current 2A."
 		(exclude_from_sim no)
 		(at 160.02 153.416 0)
 		(effects
