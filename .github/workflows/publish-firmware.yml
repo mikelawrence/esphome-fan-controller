@@ -52,6 +52,7 @@ jobs:
     name: Upload Firmware to Release
     uses: esphome/workflows/.github/workflows/upload-to-gh-release.yml@2025.10.0
     needs:
+      - get-latest-release
       - build-firmware
     with:
       version: ${{ needs.get-release-info.outputs.version }}
