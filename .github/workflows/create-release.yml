@@ -1,4 +1,4 @@
-name: Create Pre-release
+name: Create Release
 
 on:
   workflow_dispatch:
@@ -64,4 +64,4 @@ jobs:
         with:
           tag_name: ${{ steps.calendar-version.outputs.new-version }}
           generate_release_notes: true
-          prerelease: true
+          # prerelease: false
