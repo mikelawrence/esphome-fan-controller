@@ -35,15 +35,14 @@ jobs:
 
   build-firmware:
     name: Build Firmware
-    uses: esphome/workflows/.github/workflows/build.yml@v7
-    # uses: esphome/workflows/.github/workflows/build.yml@2025.10.0
+    uses: esphome/workflows/.github/workflows/build.yml@2025.10.0
     needs:
       - get-release-info
     with:
       files: |
         fan-controller-esp32-c3.factory.yaml
       esphome-version: latest
-      combined-name: fan-controller
+      # combined-name: fan-controller
       release-summary: ${{ needs.get-release-info.outputs.summary }}
       release-url: ${{ needs.get-release-info.outputs.url }}
       release-version: ${{ needs.get-release-info.outputs.version }}
@@ -56,9 +55,6 @@ jobs:
       - build-firmware
     with:
       version: ${{ needs.get-release-info.outputs.version }}
-
-
-
 
 # name: Publish Firmware
 
