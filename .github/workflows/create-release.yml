@@ -64,4 +64,4 @@ jobs:
         with:
           tag_name: ${{ steps.calendar-version.outputs.new-version }}
           generate_release_notes: true
-          prerelease: false
+          prerelease: true
