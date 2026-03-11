@@ -1,8 +1,8 @@
 # ESPHome RGBCCT LED Controller
 
 <p align="center">
-  <a href="pcb/README.md"><img src="pcb/meta/esphome-fan-controller-front-render.png" width="32%"></a>
-  <a href="pcb/README.md"><img src="pcb/meta/esphome-fan-controller-back-render.png" width="32%"></a>
+  <a href="pcb/meta/esphome-fan-controller-front-render.png"><img src="pcb/meta/esphome-fan-controller-front-render.png" width="32%"></a>
+  <a href="pcb/meta/esphome-fan-controller-back-render.png"><img src="pcb/meta/esphome-fan-controller-back-render.png" width="32%"></a>
 </p>
 
 This is a simple ESP32-C3 based fan controller design to support 4-pin computer fans from 5V to 24V at up to 2 amps. Fan tachometer is supported.
@@ -13,12 +13,12 @@ Goto [Github Pages](https://mikelawrence.github.io/esphome-fan-controller/) if y
 
 ## Status
 
-* **Rev -:** Ordered boards from JLCPCB. Ordered parts from Mouser and Digikey. Waiting to put everything together.
+* **Rev -:** Ordered boards from JLCPCB. Ordered parts from Mouser and Digikey. Currently waiting to put everything together.
 
 ## Schematic
 
 <p align="center">
-    <a href="esphome-fan-controller-schematic.pdf"><img src="pcb/meta/esphome-fan-controller-schematic.png" width="70%"></a> <br />
+    <a href="pcb/meta/esphome-fan-controller-schematic.png"><img src="pcb/meta/esphome-fan-controller-schematic.png" width="70%"></a> <br />
     Schematic
 </p>
 
