@@ -39,3 +39,36 @@ esp32_improv:
 
 # Allow user to provision WiFi credentials with USB port using Improv standard
 improv_serial:
+
+output:
+  - platform: ledc
+    pin: GPIO1
+    id: fan_pwm
+    frequency: 25000Hz # Standard for 4-pin PWM fans
+
+light:
+  - platform: esp32_rmt_led_strip
+    id: led_status
+    rgb_order: RGB
+    pin: GPIO21
+    num_leds: 1
+    chipset: ws2812
+
+fan:
+  - platform: speed
+    output: fan_pwm
+    name: "Fan"
+    restore_mode: RESTORE_DEFAULT_ON
+
+sensor:
+  - platform: pulse_counter
+    pin:
+      number: GPIO0
+      mode: INPUT_PULLUP
+    name: "Fan RPM"
+    unit_of_measurement: "RPM"
+    icon: "mdi:fan"
+    accuracy_decimals: 0
+    filters:
+      - multiply: 0.5
+    update_interval: 10s
