@@ -1,4 +1,4 @@
-name: Create Pre-Release
+name: Create Release
 
 on:
   workflow_dispatch:
@@ -37,10 +37,10 @@ jobs:
       #     echo "$(cat ./version.json)"
       #     echo "$(cat ./common/common.yaml)"
 
-      - name: Commit version changes
-        uses: stefanzweifel/git-auto-commit-action@v7
-        with:
-          commit_message: "Update Version automated commit"
+      # - name: Commit version changes
+      #   uses: stefanzweifel/git-auto-commit-action@v7
+      #   with:
+      #     commit_message: "Update Version automated commit"
 
       # - name: Update version
       #   uses: fjogeleit/yaml-update-action@v0.16.1
