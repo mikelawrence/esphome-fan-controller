@@ -22,7 +22,6 @@ update:
 http_request:
 
 dashboard_import:
-  # keep "@main" so that it can be replaced as necessary for Github workflows
   package_import_url: github://mikelawrence/esphome-fan-controller/${name}-esp32-c3.yaml@main
 
 wifi:
