@@ -5,4 +5,5 @@
   (lib (name "ESP32-C3-MINI")(type "KiCad")(uri "${KIPRJMOD}/libraries/ESP32-C3-MINI")(options "")(descr ""))
   (lib (name "SK6812-4020")(type "KiCad")(uri "${KIPRJMOD}/libraries/SK6812-4020/SK6812-4020.pretty")(options "")(descr ""))
   (lib (name "MPM3506A")(type "KiCad")(uri "${KIPRJMOD}/libraries/MPM3506A")(options "")(descr ""))
+  (lib (name "1984769")(type "KiCad")(uri "${KIPRJMOD}/libraries/1984769")(options "")(descr ""))
 )
