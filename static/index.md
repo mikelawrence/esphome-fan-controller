@@ -2,8 +2,8 @@
 
 # Web Installation
 
-Use the button below to install pre-built firmware directly to your hardware via USB. You must use Google Chrome or Microsoft Edge to program your device. Firefox does not work.
+Use the button below to install pre-built firmware (4-Pin version) directly to your hardware via USB. You must use Google Chrome or Microsoft Edge to program your device. Firefox does not work.
 
-<esp-web-install-button manifest="firmware/fan-controller.manifest.json"></esp-web-install-button>
+<esp-web-install-button manifest="firmware/fan-controller-4pin.manifest.json"></esp-web-install-button>
 
 <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>

@@ -23,7 +23,7 @@ jobs:
       matrix:
         #### Modify below here to match your project ####
         file:
-          - fan-controller-esp32-c3
+          - fan-controller-4pin-esp32-c3
         #### Modify above here to match your project ####
         esphome-version:
           - stable

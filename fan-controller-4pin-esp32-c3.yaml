@@ -1,6 +1,6 @@
 substitutions:
-  name: "fan-controller"
-  friendly_name: "Fan Controller"
+  name: "fan-controller-4pin"
+  friendly_name: "Fan Controller 4-Pin"
 
 esphome:
   name: ${name}

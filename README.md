@@ -13,7 +13,8 @@ Goto [Github Pages](https://mikelawrence.github.io/esphome-fan-controller/) if y
 
 ## Status
 
-* **Rev -:** Ordered boards from JLCPCB. Ordered parts from Mouser and Digikey. Currently waiting to put everything together.
+* **Rev -:** Ordered boards from JLCPCB. Ordered parts from Mouser and Digikey. Board is assembled but there is a problem with the 5V Power Supply. Wait for Rev A.
+* **Rev A:** Coming soon!
 
 ## Schematic
 
